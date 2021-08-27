@@ -3,8 +3,6 @@
 #ifndef	OPTIONTHREE_LOCK
 #define OPTIONTHREE_LOCK
 
-namespace optionThree_namespace {
-	// Function prototypes go here
-}
+// Functions go here
 
 #endif

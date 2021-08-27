@@ -18,15 +18,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="optionOne.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="optionThree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="optionTwo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="optionOne.h">
@@ -36,6 +27,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="optionTwo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -140,11 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="optionOne.cpp" />
-    <ClCompile Include="optionThree.cpp" />
-    <ClCompile Include="optionTwo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Downloads\input.h" />
+    <ClInclude Include="menus.h" />
     <ClInclude Include="optionOne.h" />
     <ClInclude Include="optionThree.h" />
     <ClInclude Include="optionTwo.h" />
