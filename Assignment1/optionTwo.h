@@ -8,8 +8,13 @@
 
 void baseConverter(int number, int base)
 {
-    int quotient = number;
+    int quotient;
+    if (number > 0)
+        quotient = number;
+    else
+        quotient = -number;
     int remainder;
+    string array[] = { "0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z" };
     vector<int> convertedNumber;
     while (quotient != 0)
     {
@@ -18,8 +23,13 @@ void baseConverter(int number, int base)
         convertedNumber.push_back(remainder);
     }
     int size = convertedNumber.size();
+    if (number < 0)
+        cout << "-";
     for (int i = size - 1; i >= 0; i--)
-        cout << convertedNumber[i];
+    {
+        int temp = convertedNumber[i];
+        cout << array[temp];
+    }
     cout << " (base of " << base << ")" << endl;
 }
 void convertOneBase(int number)
