@@ -1,10 +1,11 @@
 // optionTwo.h
+
 #ifndef	OPTIONTWO_LOCK
 #define OPTIONTWO_LOCK
+
 #include "input.h"
 #include <vector>
 
-// Functions go here
 void baseConverter(int number, int base)
 {
     int quotient;
