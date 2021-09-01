@@ -62,8 +62,12 @@ void programOne(void)
         case 'b': case 'B': asciiString = asciiConverter(userStringInput); 
                             cout << "\n\t\t\tConverted to ASCII numbers:" << endl;
                             cout << "\t\t\t" + asciiString << endl; displayOptionOneMenu(); break;
-        case 'c': case 'C': /*function here*/ displayOptionOneMenu(); break;
-        case 'd': case 'D': /*function here*/ displayOptionOneMenu(); break;
+        case 'c': case 'C': saveToFile(asciiString);
+                            cout << "\n\t\t\tFile, test.bin, has been written and saved." << endl;
+                            displayOptionOneMenu(); break;
+        case 'd': case 'D': cout << "\n\t\t\tReading file, test.bin...";
+                            cout << "\n\t\t\t" + readFromFile() << endl;
+                            displayOptionOneMenu(); break;
         default: cout << "\t\tERROR-1A: Invalid input. Must be '0','A','B','C', or 'D'"; continue;
         }
     } while (true);
